@@ -1,0 +1,192 @@
+@import"./variables";
+@import "./main";
+@mixin text-style {
+    font-size: 25px;
+    padding: 3px 10px;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+  .button  {
+    padding: 5px 15px;
+    font-size: 15px;
+    color: $main-color;
+  }
+
+
+#name-buy{
+    height: 70px;
+    padding: 15px;
+    background-color: $secondary-color;
+
+    .row{
+        @include text-style;
+        }
+
+    .name{
+        color: green;
+        text-align: left;
+
+        span{
+            color:$main-color;
+            }
+        }
+    }
+    
+    #buy{
+       @extend .button;
+        background-color:rgb(137, 185, 65);  
+    }
+        
+    
+    
+    
+#intro{
+    color: black;
+    height: 70px;
+
+    .row{
+        padding: 25px 10px;
+        justify-content:space-evenly;
+        text-align: center;
+        .col-3{
+            font-size: 20px;
+        }
+        .col-4{
+            font-size: 18px;
+        }
+    }
+}
+    
+    #intro .row .col-4 span{
+    padding-left: 20px;
+    }
+    
+    
+    
+#work{
+    color:$main-color;
+    height: 600px;
+    background-color: $secondary-color;
+
+    .row{
+        font-size: 45px;
+        padding: 40px 0;
+        justify-content:center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .col-4{
+            padding-bottom: 30px;
+            padding-top: 20px;
+            }
+    }
+}
+
+#work .row .col-4 .freelance{
+    font-size: 25px;
+    padding-top: 50px;
+    }
+
+#see{
+    color: $main-color;
+    background-color: $secondary-color;
+    font-size: 20px;
+    padding: 10px;
+}
+          
+    
+#about{
+    height: 700px;
+
+    .aboutclass .row{
+        font-size: 15px;
+        justify-content:center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+    }
+
+    .aboutclass h2{
+        padding-bottom: 30px;
+        color: gray;
+        }
+
+    .aboutclass span{
+        color: $main-color;
+            }
+
+    .bio .row{
+        font-size: 15px;
+        height: 300px;
+        justify-content:center;
+
+        .col-4.pic{
+            flex-direction: row;
+        }
+
+        .col-4 .head{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .col-4 .text{
+            padding-bottom: 20px;
+            font-size: 17px;
+        }
+    }
+
+    
+}
+    
+#hire{
+    padding: 5px 15px;
+    font-size: 15px;
+    color: $main-color;
+    background-color:$secondary-color;
+}
+       
+    
+    
+#what-I-do{
+    height: 700px;
+
+    .I-do{
+        .row{
+            font-size: 15px;
+            justify-content:center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            height: 200px;
+            }
+        h2{
+            padding-bottom: 30px;
+            }
+    } 
+    
+    .items{
+
+        .row{
+            flex-direction: row;
+            text-align: center;
+            justify-content:center;
+            align-items: center;
+            font-size: 15px;
+            margin-top: 40px;
+            margin-bottom: 30px;
+            height: 200px;
+            }
+
+        h3{
+            margin-bottom: 30px;
+            }
+
+        } 
+}
+    
+    
+        
+    
